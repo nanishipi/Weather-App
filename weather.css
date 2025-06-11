@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    margin: 5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
 }
