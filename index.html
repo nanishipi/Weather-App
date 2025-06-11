@@ -3,40 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="weather.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Weatheria</title>
 
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
 </head>
 
 <body>
     <header>
         <h1 class="title">Weatheria</h1>
     </header>
-    <main>
-        <div class="search-section">
-            <div class="search-box">
-                <input class="location-input" type="text" placeholder="Search City">
-                <button class="search-button" type="button">Search</button>
-            </div>
+
+    <main class="container">
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input class="location-input" type="text" placeholder="Search city…">
+            <button class="search-button">Search</button>
         </div>
-        <div class="results-section">
-            <div class="weather-card">  
-                <div class="weather-content">
-                    <h1 class="card-title">Montreal</h1>
-                    <p class="card-temperature">19º</p>
-                    <p class="card-condition">Mostly Clear</p>
-                    <p class="card-humidity">57%</p>
-                    <p class="card-UV">8</p>
-                    <p class="card-sunset"></p>
+
+        <!-- Current Weather Card -->
+        <section class="weather-card">
+            <div class="overlay"></div>
+            <div class="weather-info">
+                <h2 class="city">Montreal</h2>
+                <p class="temp">19°</p>
+                <p class="condition">Mostly Clear</p>
+                <div class="details">
+                    <span>💧 57%</span>
+                    <span>💨 18 km/h</span>
+                    <span>☀️ UV 8</span>
+                    <span>🌇 21:18</span>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Hourly Forecast (scrollable) -->
+        <section class="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div class="hourly-list">
+                
+            </div>
+        </section>
+
+        <!-- 5-Day Forecast -->
+        <section class="daily-forecast">
+            <h3>4-Day Forecast</h3>
+            <div class="daily-list">
+                
+            </div>
+        </section>
     </main>
 </body>
 
 </html>
+<script src="script.js"></script>
